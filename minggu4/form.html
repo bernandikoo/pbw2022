@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>FORM HTML</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <h1>FORM MAHASISWA</h1>
+        <form class="fmhs" name="fmhs" action="proses.php" method="post">
+            <table>
+                <tr>
+                    <td><b>NIM : </b></td>
+                    <td><input type="number" name="fnim" required></td>
+                </tr>
+                <tr>
+                    <td><b>Nama :</b></td>
+                    <td><input type="text" name="fnama" required></td>
+                </tr>
+                <tr>
+                    <td><b>Program Studi :</b></td>
+                    <td>
+                        <select name="fprodi" required>
+                            <option value="">Program Studi Anda</option>
+                            <option value="a11">S1 - Teknik Informatika</option>
+                            <option value="a12">S1 - Sistem Informasi</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><b>Tanggal Lahir : </b></td>
+                    <td><input type="date" name="ftgl" value="tgl_lahir" required></td>
+                </tr>
+                <tr>
+                    <td><b>Bidang Minat : </b></td>
+                    <td><input type="checkbox" name="fminat" value="web" required>Web Developer<br>
+                    <input type="checkbox" name="fminat" value="mobile" required>Mobile Developer<br> 
+                    <input type="checkbox" name="fminat" value="data" required>Data Scientist</td>
+                </tr>
+                <tr>
+                    <td><b>Lampiran Sertifikat : </b></td>
+                    <td><input type="file" name="flampiran" value="lampiran" required></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" value="Kirim"></td>
+                </tr>
+            </table>
+            
+        </form>
+    </body>
+</html>
