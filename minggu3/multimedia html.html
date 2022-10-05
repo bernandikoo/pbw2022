@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Multimedia - HTML 5</title>
+        <style>
+            h2 {
+                background-color: white;
+                border: solid black;
+                text-align: center;
+            }
+            video {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-top:20px solid black;
+                border-right:1px solid black;
+                border-bottom:20px solid black;
+                border-left:1px solid black;
+            }
+            iframe {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                border-top:20px solid black;
+                border-right:1px solid black;
+                border-bottom:20px solid black;
+                border-left:1px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Multimedia Video - HTML 5</h2>
+        <p>
+            <button onclick="playVid()" type="button">Klik Mulai Video</button>
+            <button onclick="pauseVid()" type="button">Pause Video</button>
+            <button onclick="durationVid()" type="button">Durasi Video</button>
+            <button onclick="controlsOn()" type="button">Controls On</button>
+            <button onclick="controlsOff" type="button">Controls Off</button>
+            <button onclick="loopStatus()" type="button">Loop Status</button>
+            <button onclick="loopOn()" type="button">Loop On</button>
+            <button onclick="loopOff()" type="button">Loop Off</button>
+            
+        </p>
+        <video id="myVideo" width="450" class="video">
+            <source type="video/mp4" src="mov_bbb.mp4">        
+        </video>
+       
+        <p>
+            <h2>Video Subtitle</h2>
+            <video controls width="560" height="315">
+                <source type="video/mp4" src="mov_bbb.mp4">
+                <track default src="subtitle.vtt">
+            </video>
+        </p>
+
+    </body>
+    <script>
+        var vid = document.getElementById("myVideo");
+
+        function playVid() {
+            vid.play();
+        }
+
+        function pauseVid() {
+            vid.pause();
+        }
+        function durationVid() {
+            alert(vid.duration);
+        }
+        function controlsOn() {
+            vid.controls = true;
+            vid.load ();
+        }
+        function controlsOff() {
+            vid.controls = false;
+            vid.load ();
+        }
+        function loopStatus() {
+            alert(vid.loop);
+        }
+        function loopOn() {
+            vid.loop = true;
+        }
+        function loopOff() {
+            vid.loop = false;
+        }
+        vid.onplay = function() {
+            alert("Video Ini Sedang Di Putar");
+        }
+        vid.onpause = function (){
+            alert("Video Ini Telah Di Pause");
+        }
+        vid.onvolumechange = function (){
+            alert("Volume Video Ini Telah Diubah");
+        }
+    </script>
+</html>
