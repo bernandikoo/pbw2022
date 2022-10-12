@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Layout - HTML</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+		* {
+    box-sizing: border-box;
+  }
+body{
+    font-family:'Times New Roman', Times, serif;
+}
+header {
+    background-color: dodgerblue;
+    padding: 30px;
+    text-align: center;
+    color: white;
+
+}
+section::after{
+    display: flex;
+}
+nav {
+    float: left;
+    width: 30%;
+    height: 300px;
+    background: #ffffff;
+    padding: 20px;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+}
+nav a:hover{
+    color:lightblue;
+    background-color: black;
+}
+nav ul{
+    padding: 0;
+}
+article{
+    float: left;
+    padding: 20px;
+    width: 70%;
+    background-color: #f1f1f1;
+    height: 300px;
+}
+footer{
+  background-color: #777;
+  padding: 10px;
+  text-align: right;
+  color: white;
+}
+</style>
+    </head>
+    <body>
+        <header>
+            <h1>Belajar Membuat Layout HTML & CSS</h1>
+        </header>
+        <section>
+            <nav>
+                <ul>
+                    <b><li><a href="#">HTML</a></li>
+                    <b><li><a href="#">CSS</a></li>
+                    
+                </ul>
+            </nav>
+        </section>
+        <article>
+            <h1>Layout HTML & CSS</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id, quia dolores excepturi. Ad voluptatem nesciunt provident commodi beatae. Voluptatum alias ab ipsa atque vitae odio iure accusamus laboriosam quibusdam, assumenda reprehenderit aperiam, adipisci nostrum fugit. Voluptas quas ipsum officiis dolor, numquam quos, unde ducimus odio animi repudiandae, temporibus alias praesentium esse delectus magnam nihil et est, error ad fuga. Laudantium obcaecati quis officiis est mollitia quibusdam explicabo fugit vel veniam esse non assumenda nisi facere ab, similique molestiae nulla nemo iusto alias quam quisquam nihil quod ratione in. Aliquam, inventore repudiandae tempora nihil in unde adipisci officia. Recusandae, eos perspiciatis!</p>
+        </article>
+        <footer>
+            copyright &copy; 2021
+        </footer>
+    </body>
+</html>

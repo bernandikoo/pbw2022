@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio2 - HTML</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+          {
+            margin : 0;
+            padding: 0;
+            box-sizing: border-box;
+          }
+          body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(to right, #43c6ac, #120d75);
+          }
+         .player{
+           position: absolute; 
+           width: 350px;
+           background: #f1f3f4;
+          }
+          .player .imgbox{
+            position: relative;
+            width: 100%;
+            height: 350px;
+          }
+          .player .imgbox img { 
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+          }
+          .player audio{
+            width: 100%;
+            outline: none;
+          }
+        </style>
+        </head>
+        <body>
+          <div class="player">
+            <div class="imgbox">
+              <img src="media/Oasis.jpg" alt="Oasis">
+            </div>
+            <audio src="media/Oasis  Dont look back in anger .mp3" type="audio/mp3" controls></audio>
+          </div>
+        </body>
+        </html>
