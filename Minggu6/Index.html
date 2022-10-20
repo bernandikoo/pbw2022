@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
+    <title>Portofolio</title>
+    <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.logo{
+  color: #262728;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+nav ul{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 25px;
+}
+nav ul li a{
+  color: #262728;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: #00bf9f;
+  transition: .3s;
+}
+header{
+  width: 92%;
+  margin: 0 auto;
+  padding: 13px 0;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  right: 30px;
+  border-radius: 50px;
+  z-index: 2;
+  background: white;
+  box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+}
+img{
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 45%;
+  height: 100%;
+  overflow: hidden;
+}
+.content{
+position: absolute;
+top: 50%;
+left: 46%;
+transform: translateY(-50%);
+}
+.content h1{
+font-size: 70px;
+color: #262728;
+line-height: 110px;
+margin-bottom: 25px;
+}
+.content p{
+font-size: 14px;
+color: #585858;
+line-height: 28px;
+margin-bottom: 30px;
+}
+footer {
+  text-align: center;
+  margin-top: 45px;
+  border-top: 1px solid black;
+}
+    </style>
+    </head>
+    <body>
+      
+        <header>
+          <nav>
+            <h2 class="logo">Portofolio</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tentang.html">Tentang</a></li>
+              <li><a href="Cv.pdf">Download CV</a></li>
+              <li><a href="Overview.html">Overview</a></li>
+              <li><a href="kontak.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+          <img src="Media/Fotodiri.jpg" alt="Foto Diri">
+		  <div class ="content">
+		  <h1>Bernandiko Priyambodo</h1>
+		  <p>Hi, saya adalah calon web developer masa depan,<br>saat ini
+sedang belajar HTML 5.</p>
+		</div>  
+		<footer>
+<p>Copyright &copy; 2020 bernandiko.</p>
+		</footer>
+    </body>
+    </html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="Media/favicon.ico">
+    <title>Portofolio</title>
+    <style>
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  position: relative;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 2%;
+  padding-left: 2%;
+}
+.logo{
+  color: #262728;
+  font-size: 35px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+nav ul{
+  flex: 1;
+  text-align: right;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  padding: 0px 25px;
+}
+nav ul li a{
+  color: #262728;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+}
+nav ul li a:hover{
+  color: #00bf9f;
+  transition: .3s;
+}
+header{
+  width: 92%;
+  margin: 0 auto;
+  padding: 13px 0;
+  position: absolute;
+  top: 0;
+  left: 30px;
+  right: 30px;
+  border-radius: 50px;
+  z-index: 2;
+  background: white;
+  box-shadow: 0 0 30px rgb(0 0 0 / 8%);
+}
+.about {
+  width: 100%;
+  padding: 100px 0;
+}
+.about-me {
+  width: 1130px;
+  max-width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space around;
+}
+.about-me img {
+  height: auto;
+  width: 300px;
+  border-radius: 10px;
+}
+.about-text {
+  width: 550px;
+}
+.about-text h2 {
+  color: black;
+  font-size: 65px;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+  border-bottom: 1px solid black;
+  padding: 15px;
+}
+.about-text p {
+  color: black;
+  letter-spacing: 1px;
+  line-height: 28px;
+  font-size: 18px;
+  margin-bottom: 45px;
+  text-align: justify;
+  padding: 15px;
+}
+footer{
+  text-align: center;
+  margin-top: 45px;
+  border-top: 1px solid black;
+}
+    </style>
+    </head>
+    <body>
+      
+        <header>
+          <nav>
+            <h2 class="logo">Portofolio</h2>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="tentang.html">Tentang</a></li>
+              <li><a href="Cv.pdf">Download CV</a></li>
+              <li><a href="Overview.html">Overview</a></li>
+              <li><a href="kontak.html">Contact</a></li>
+            </ul>
+          </nav>
+        </header>
+       <section class="about">
+         <div class="about-me">
+           <img src="Media/IMG-20220825-WA0049.jpg">
+           <div class="about-text">
+             <h2>Tentang Saya</h2>
+             <p>Hai, saya Bernandiko Priyambodo berasal dari Kota Semarang. Saya sekarang berada di bangku perkuliahan dengan jurusan Teknik Informatika di Universitas Dian Nuswantoro Semarang tepatnya berada di sekitar Tugu Muda.</p>
+           </div>
+         </div>
+       </section>
+       <footer>
+         <p>Copyright &copy; 2020 bernandiko.</p>
+       </footer>
+    </body>
+    </html>
